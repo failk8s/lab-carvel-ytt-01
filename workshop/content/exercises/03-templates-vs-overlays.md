@@ -10,9 +10,8 @@ adding markup and logic to them which allows us to parameterize the output
 they produce.
 
 The second is to leave the resource files as is, but create separate overlays
-which when applied with ``ytt`` which will result in edits being made on the
-fly to the original resources before they get applied to the Kubernetes
-cluster.
+which when applied with ``ytt`` will result in edits being made on the fly to
+the original resources before they get applied to the Kubernetes cluster.
 
 Each approach has its own pros and cons in different circumstances so which
 you use, or whether you use a combination of both, will depend on the use
