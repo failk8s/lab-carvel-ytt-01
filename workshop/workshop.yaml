@@ -5,4 +5,5 @@ modules:
     - workshop-overview
     - verify-environment
     - exercises/01-kubernetes-resources
+    - exercises/02-multiple-instances
     - workshop-summary
