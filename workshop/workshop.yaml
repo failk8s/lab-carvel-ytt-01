@@ -3,6 +3,6 @@ name: "Carvel ytt #1"
 modules:
     activate:
     - workshop-overview
-    - setup-environment
+    - verify-environment
     - exercises/01-kubernetes-resources
     - workshop-summary
