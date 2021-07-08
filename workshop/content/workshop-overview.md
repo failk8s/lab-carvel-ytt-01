@@ -1,1 +1,3 @@
-This is the initial landing page for your workshop. Include in this page a description of what your workshop is about.
+This workshop explores the use of the Carvel tool ``ytt`` to implement
+templates for Kubernetes resources used in deploying applications to a
+Kubernetes cluster.
