@@ -9,6 +9,8 @@ modules:
         name: Kubernetes Resources
     exercises/02-multiple-instances:
         name: Multiple Instances
+    exercises/03-templates-vs-overlays:
+        name: Templates vs Overlays
     workshop-summary:
         name: Workshop Summary
         exit_sign: Finish Workshop

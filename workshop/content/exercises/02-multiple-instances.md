@@ -41,9 +41,9 @@ file: ~/exercises/resources-v1/deployment.yaml
 text: "website"
 ```
 
-Similarly in the service resources we would need to change the name of the
-resource and the label on the service as well as the matcher used to match
-the pods created from the deployment.
+Similarly in the service resource we would need to change the name of the
+resource, as well as the label on the service and the label selector used to
+match the pods created from the deployment that the service should map to.
 
 ```editor:select-matching-text
 file: ~/exercises/resources-v1/service.yaml

@@ -12,7 +12,7 @@ spec:
         app: website
     spec:
       containers:
-      - name: website
+      - name: nginx
         image: bitnami/nginx:latest
         ports:
         - containerPort: 8080
