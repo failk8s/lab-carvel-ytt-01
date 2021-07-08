@@ -40,7 +40,7 @@ This should now yield something like:
 ```
 Target cluster 'https://10.96.0.1:443'
 
-Apps in namespace 'lab-carvel-ytt-01-w01-s008'
+Apps in namespace '{{session_namespace}}'
 
 Name     Namespaces                  Lcs   Lca  
 website  {{session_namespace}}  true  5s  
