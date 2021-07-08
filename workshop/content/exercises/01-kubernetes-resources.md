@@ -43,7 +43,7 @@ Target cluster 'https://10.96.0.1:443'
 Apps in namespace 'lab-carvel-ytt-01-w01-s008'
 
 Name     Namespaces                  Lcs   Lca  
-website  {{session_namespace}}}  true  5s  
+website  {{session_namespace}}  true  5s  
 
 Lcs: Last Change Successful
 Lca: Last Change Age
@@ -59,7 +59,7 @@ You can also use ``kapp`` to inspect the application afterwards as well.
 command: kapp inspect -a website
 ```
 
-Once deployed, just to verify that the application deployed okay you can run:
+Once deployed, just to verify that the application is started you can run:
 
 ```terminal:execute
 command: curl http://website.{{session_namespace}}.svc.cluster.local
