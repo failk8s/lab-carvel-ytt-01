@@ -11,6 +11,8 @@ modules:
         name: Multiple Instances
     exercises/03-templates-vs-overlays:
         name: Templates vs Overlays
+    exercises/04-processing-templates:
+        name: Processing Templates
     workshop-summary:
         name: Workshop Summary
         exit_sign: Finish Workshop
