@@ -33,7 +33,7 @@ a copy of the resources so we can edit them and change references to the
 name of the application, using a different name.
 
 For the deployment resource we need to change the name of the resource, as
-well as labels applied to the deployment and resources created from the
+well as labels applied to the resources created from the
 deployment.
 
 ```editor:select-matching-text
@@ -42,8 +42,8 @@ text: "website"
 ```
 
 Similarly in the service resource we would need to change the name of the
-resource, as well as the label on the service and the label selector used to
-match the pods created from the deployment that the service should map to.
+resource and the label selector used to match the pods the service should map
+to.
 
 ```editor:select-matching-text
 file: ~/exercises/resources-v1/service.yaml
