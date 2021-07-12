@@ -3,11 +3,7 @@ how we can provide data input values for our template. Now let's look at the
 template files themselves and how the data values are inserted into the
 resource definition.
 
-```editor:open-file
-file: ~/exercises/templates-v1/deployment.yaml
-```
-
-Focusing on the name property of the resource:
+Open up the ``templates-v1/deployment.yaml`` template file.
 
 ```editor:select-matching-text
 file: ~/exercises/templates-v1/deployment.yaml
@@ -15,7 +11,7 @@ text: "name: (.*)"
 isRegex: true
 ```
 
-we find:
+Focusing on the name property of the resource we find:
 
 ```
 name: #@ data.values.website.name
@@ -24,9 +20,9 @@ name: #@ data.values.website.name
 The file format here is YAML, but against the ``name`` property we do not
 actually have a value but instead have a comment.
 
-All ``ytt`` templates are therefore still valid YAML files. Details about
-variable sustitutions and everything else you can place in the template is
-handled through embedding comments in the YAML file.
+All ``ytt`` templates are valid YAML files but details about variable
+sustitutions and everything else you can place in the template is handled
+through embedding comments in the YAML file.
 
 All comments which pertain to ``ytt`` template processing start with the
 ``#@`` prefix but there are a couple of subtly different variants of this.

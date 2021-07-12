@@ -15,9 +15,14 @@ website:
   name: website
 ```
 
-The line ``#@data/values`` is an annotation interpreted by ``ytt`` which
-indicates that this file contains defaults for the input data values used by
-these templates.
+The line:
+
+```
+#@data/values
+```
+
+is an annotation interpreted by ``ytt`` which indicates that this file
+contains defaults for the input data values used by these templates.
 
 When running ``ytt`` to process the template files, there are a number of ways
 you can override the default data values. The easiest to access of these is to
