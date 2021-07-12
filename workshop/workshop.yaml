@@ -9,4 +9,5 @@ modules:
     - exercises/03-templates-vs-overlays
     - exercises/04-processing-templates
     - exercises/05-input-data-values
+    - exercises/06-annotations-vs-directives
     - workshop-summary

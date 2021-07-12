@@ -15,7 +15,7 @@ website:
   name: website
 ```
 
-The ``#@data/values`` comment is a special marker interpreted by ``ytt`` which
+The line ``#@data/values`` is an annotation interpreted by ``ytt`` which
 indicates that this file contains defaults for the input data values used by
 these templates.
 
