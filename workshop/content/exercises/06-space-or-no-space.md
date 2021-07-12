@@ -45,3 +45,8 @@ prefix ``#@``, where as in the case of a directive, there is at least one
 space after ``#@``.
 
 If you get these mixed up then you will get errors.
+
+There are a range of annotations one can apply when using ``ytt``. Most of
+these relate to overlays, so we will not be going into them in this workshop.
+Thus the only one you need to know of at this point is the annotation above
+used to mark a YAML file as being a data values file.

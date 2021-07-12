@@ -15,8 +15,10 @@ modules:
         name: Processing Templates
     exercises/05-input-data-values:
         name: Input Data Values
-    exercises/06-annotations-vs-directives:
-        name: Annotations vs Directives
+    exercises/06-space-or-no-space:
+        name: Space or No Space
+    exercises/07-starlark-language:
+        name: Starlark Language
     workshop-summary:
         name: Workshop Summary
         exit_sign: Finish Workshop
