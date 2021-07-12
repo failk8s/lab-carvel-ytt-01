@@ -72,3 +72,19 @@ Succeeded
 
 We were thus able to easily create multiple instances of the application
 from the same template resource files.
+
+We are done with this set of example applications, so you can delete them
+by running:
+
+```terminal:execute
+command: |-
+  kapp delete -a website -y
+  kapp delete -a website-1 -y
+  kapp delete -a website-2 -y
+```
+
+Take note that because ``kapp`` tracks what resources were used to create the
+deployment for the application, we did not need to replicate the set of
+resources to supply to ``kubectl delete``. Instead, it was enough to supply to
+``kapp delete`` the name of the application and ``kapp`` worried about
+everything else.
