@@ -8,4 +8,5 @@ modules:
     - exercises/02-multiple-instances
     - exercises/03-templates-vs-overlays
     - exercises/04-processing-templates
+    - exercises/05-input-data-values
     - workshop-summary

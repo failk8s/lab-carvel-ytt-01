@@ -13,6 +13,8 @@ modules:
         name: Templates vs Overlays
     exercises/04-processing-templates:
         name: Processing Templates
+    exercises/05-input-data-values:
+        name: Input Data Values
     workshop-summary:
         name: Workshop Summary
         exit_sign: Finish Workshop
