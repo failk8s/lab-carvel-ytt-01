@@ -17,36 +17,24 @@ Focusing on the name property of the resource we find:
 name: #@ data.values.website.name
 ```
 
-The file format here is YAML, but against the ``name`` property we do not
-actually have a value but instead have a comment.
+The file format here is YAML, but against the ``name`` property we do not have
+a value but instead have an annotation where the value should be, in the form
+of a comment.
 
 All ``ytt`` templates are valid YAML files but details about variable
 sustitutions and everything else you can place in the template is handled
 through embedding comments in the YAML file.
 
 All comments which pertain to ``ytt`` template processing start with the
-``#@`` prefix but there are a couple of subtly different variants of this.
+``#@`` prefix.
 
-If you remember from the previous section the data values file included a line
-of the form:
+In this case the value annotation is providing an expression which will be
+evaluated to derive what the value should be set to.
 
-```
-#@data/values
-```
+Very important to note in this case is that there is a space after the ``#@``
+comment prefix. This is different to the structure annotation we saw
+previously which was used to mark a YAML file as being a data values file.
 
-This prior example is called an annotation. This is different to what you see
-in the example above for the template file, which instead is referred to as a
-directive.
-
-How do you tell the difference?
-
-The difference is that in annotations there is no space after the comment
-prefix ``#@``, where as in the case of a directive, there is at least one
-space after ``#@``.
-
-If you get these mixed up then you will get errors.
-
-There are a range of annotations one can apply when using ``ytt``. Most of
-these relate to overlays, so we will not be going into them in this workshop.
-Thus the only one you need to know of at this point is the annotation above
-used to mark a YAML file as being a data values file.
+The simple rule here is that a space must be used where what follows is
+executable code. In this case the code was an expression generating the value
+to use.

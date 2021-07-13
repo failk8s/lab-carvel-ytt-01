@@ -10,5 +10,5 @@ modules:
     - exercises/04-processing-templates
     - exercises/05-input-data-values
     - exercises/06-value-annotations
-    - exercises/07-starlark-statements
+    - exercises/07-starlark-language
     - workshop-summary
