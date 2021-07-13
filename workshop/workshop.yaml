@@ -11,4 +11,5 @@ modules:
     - exercises/05-input-data-values
     - exercises/06-value-annotations
     - exercises/07-starlark-language
+    - exercises/08-conditional-logic
     - workshop-summary

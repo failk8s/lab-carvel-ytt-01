@@ -19,6 +19,8 @@ modules:
         name: Value Annotations
     exercises/07-starlark-language:
         name: Starlark Language
+    exercises/08-conditional-logic:
+        name: Conditional Logic
     workshop-summary:
         name: Workshop Summary
         exit_sign: Finish Workshop
