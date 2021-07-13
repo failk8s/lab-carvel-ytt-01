@@ -17,8 +17,8 @@ modules:
         name: Input Data Values
     exercises/06-value-annotations:
         name: Value Annotations
-    exercises/07-starlark-language:
-        name: Starlark Language
+    exercises/07-starlark-statements:
+        name: Starlark Statements
     workshop-summary:
         name: Workshop Summary
         exit_sign: Finish Workshop
