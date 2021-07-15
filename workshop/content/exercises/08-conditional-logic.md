@@ -121,3 +121,9 @@ the internal Kubernetes service.
 ```terminal:execute
 command: curl http://{{session_namespace}}-website.{{ingress_domain}}/
 ```
+
+Delete the deployed again once more.
+
+```terminal:execute
+command: kapp delete -a website
+```
