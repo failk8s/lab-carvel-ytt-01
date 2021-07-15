@@ -93,8 +93,7 @@ This needs to be done with ``if`` statements, ``while`` and ``for`` loops, as
 well as a function ``def``.
 
 Run ``ytt`` to process this new set of templates, setting the hostname and
-domain name for the ingress, and filtering the output just to show the ingress
-resource which is generated.
+domain name for the ingress.
 
 ```terminal:execute
 command: ytt -f templates-v2 -v website.ingress.hostname={{session_namespace}}-website -v website.ingress.domain={{ingress_domain}}
