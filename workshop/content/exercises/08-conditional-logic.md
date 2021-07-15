@@ -67,13 +67,11 @@ the resource definition.
 
 ```editor:select-matching-text
 file: ~/exercises/templates-v2/ingress.yaml
-text: "#@ if data.values"
-before: 0
-after: 0
+text: "#@ if "
 ```
 
 Not only can these be used to conditionally include a part of the YAML, the
-whole YAML structure will only be included if the appropriate data values
+whole YAML structure might only be included if the appropriate data values
 are set.
 
 Although in this example the conditional checks enclose YAML definitions,
@@ -93,12 +91,12 @@ it borrows its syntax) where indenting is used to denote the extent of blocks.
 This needs to be done with ``if`` statements, ``while`` and ``for`` loops, as
 well as a function ``def``.
 
-Run ``ytt`` to process these new set of templates, setting the hostname and
+Run ``ytt`` to process this new set of templates, setting the hostname and
 domain name for the ingress, and filtering the output just to show the ingress
 resource which is generated.
 
 ```terminal:execute
-command: ytt -f templates-v2 -v website.ingress.hostname={{session_namespace}}-website -v website.ingress.domain={{ingress_domain}} --filter-kind=Ingress
+command: ytt -f templates-v2 -v website.ingress.hostname={{session_namespace}}-website -v website.ingress.domain={{ingress_domain}} | kapp deploy -a website -f - --diff-run --filter-kind=Ingress
 ```
 
 You will see that neither the ingress class has been set, or a secure ingress
@@ -108,7 +106,7 @@ of the parts of the resource definition for that.
 Deploy the complete application now by running:
 
 ```terminal:execute
-command: ytt -f templates-v2 -v website.ingress.hostname={{session_namespace}}-website -v website.ingress.domain={{ingress_domain}} | kapp deploy -a website
+command: ytt -f templates-v2 -v website.ingress.hostname={{session_namespace}}-website -v website.ingress.domain={{ingress_domain}} | kapp deploy -a website -f - -y
 ```
 
 List the ingress which was created so you can see the hostname was filled out correctly.
