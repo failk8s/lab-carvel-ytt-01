@@ -67,7 +67,8 @@ the resource definition.
 
 ```editor:select-matching-text
 file: ~/exercises/templates-v2/ingress.yaml
-text: "#@ if "
+text: "#@ if .*"
+isRegex: true
 ```
 
 Not only can these be used to conditionally include a part of the YAML, the
@@ -96,12 +97,12 @@ domain name for the ingress, and filtering the output just to show the ingress
 resource which is generated.
 
 ```terminal:execute
-command: ytt -f templates-v2 -v website.ingress.hostname={{session_namespace}}-website -v website.ingress.domain={{ingress_domain}} | kapp deploy -a website -f - --diff-run --filter-kind=Ingress
+command: ytt -f templates-v2 -v website.ingress.hostname={{session_namespace}}-website -v website.ingress.domain={{ingress_domain}}
 ```
 
-You will see that neither the ingress class has been set, or a secure ingress
-defined since we didn't provide data values which would trigger inclusion
-of the parts of the resource definition for that.
+Find the ingress and you will see that neither the ingress class or a secure
+ingress were defined since we didn't provide data values which would trigger
+inclusion of the parts of the resource definition for that.
 
 Deploy the complete application now by running:
 
