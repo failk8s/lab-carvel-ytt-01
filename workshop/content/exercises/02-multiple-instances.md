@@ -29,8 +29,8 @@ problem.
 
 In order to be able to deploy a second instance of our application we would
 either have to deploy it in a different namespace, or we would need to create
-a copy of the resources so we can edit them and change references to the
-name of the application, using a different name.
+a copy of the resources so we can edit them and change any references to the
+name of the application.
 
 For the deployment resource we need to change the name of the resource, as
 well as labels applied to the resources created from the

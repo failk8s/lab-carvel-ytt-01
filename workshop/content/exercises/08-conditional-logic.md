@@ -71,9 +71,9 @@ text: "#@ if .*"
 isRegex: true
 ```
 
-Not only can these be used to conditionally include a part of the YAML, the
-whole YAML structure might only be included if the appropriate data values
-are set.
+Not only can these be used to conditionally include just a part of a YAML
+structure, the complete YAML structure can be excluded if the appropriate data
+values are not set.
 
 Although in this example the conditional checks enclose YAML definitions,
 they can also be used to enclose other code statements as well.
@@ -122,8 +122,8 @@ the internal Kubernetes service.
 command: curl http://{{session_namespace}}-website.{{ingress_domain}}/
 ```
 
-Delete the deployed again once more.
+Delete the deployed application once more.
 
 ```terminal:execute
-command: kapp delete -a website
+command: kapp delete -a website -y
 ```
