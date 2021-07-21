@@ -21,6 +21,8 @@ modules:
         name: Starlark Language
     exercises/08-conditional-logic:
         name: Conditional Logic
+    exercises/09-data-values-files:
+        name: Data Values Files
     workshop-summary:
         name: Workshop Summary
         exit_sign: Finish Workshop
