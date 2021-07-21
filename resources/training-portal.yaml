@@ -9,5 +9,5 @@ spec:
   workshops:
   - name: lab-carvel-ytt-01
     capacity: 1
-    expires: 60m
+    expires: 30m
     orphaned: 5m
