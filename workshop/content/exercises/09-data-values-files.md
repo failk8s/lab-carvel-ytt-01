@@ -24,8 +24,8 @@ file: ~/exercises/override-values.yaml
 text: |-
   website:
     ingress:
-      hostname={{session_namespace}}-website
-      domain={{ingress_domain}}
+      hostname: {{session_namespace}}-website
+      domain: {{ingress_domain}}
 ```
 
 You can see that this YAML file mirrors the structure of the data values file
